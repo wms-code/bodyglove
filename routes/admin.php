@@ -31,13 +31,13 @@ Route::group(['namespace' => 'Admin'], function() {
         Route::resource('fabricstock', 'FabricstockController');  
         Route::resource('fabricgroup', 'FabricGroupController');
         
-        Route::resource('cuttingproduction', 'Cuttingcroductioncontroller');
-        Route::post('cuttingproduction/fetchsize', 'CuttingProductionController@fetchsize')->name('cuttingproduction.fetchsize');
-        Route::post('cuttingproduction/fetchfrn', 'CuttingProductionController@fetchfrn')->name('cuttingproduction.fetchfrn');
-        Route::post('cuttingproduction/fetchcolourfabric', 'CuttingProductionController@fetchcolourfabric')->name('cuttingproduction.fetchcolourfabric');
-        Route::put('cuttingproduction', 'CuttingProductionController@update');
-        Route::post('cuttingproduction/saveproduction', 'CuttingProductionController@saveproduction')->name('cuttingproduction.saveproduction');
-        Route::post('cuttingproduction/fetchproduction', 'CuttingProductionController@fetchproduction')->name('cuttingproduction.fetchproduction');
+        Route::resource('cuttingproduction', 'Cuttingproductioncontroller');
+        Route::post('cuttingproduction/fetchsize', 'Cuttingproductioncontroller@fetchsize')->name('cuttingproduction.fetchsize');
+        Route::post('cuttingproduction/fetchfrn', 'Cuttingproductioncontroller@fetchfrn')->name('cuttingproduction.fetchfrn');
+        Route::post('cuttingproduction/fetchcolourfabric', 'Cuttingproductioncontroller@fetchcolourfabric')->name('cuttingproduction.fetchcolourfabric');
+        Route::put('cuttingproduction', 'Cuttingproductioncontroller@update');
+        Route::post('cuttingproduction/saveproduction', 'Cuttingproductioncontroller@saveproduction')->name('cuttingproduction.saveproduction');
+        Route::post('cuttingproduction/fetchproduction', 'Cuttingproductioncontroller@fetchproduction')->name('cuttingproduction.fetchproduction');
         
 
         Route::post('knittedfabric/fetchfabric', 'KnittedFabInwardController@fetchfabric')->name('knittedfabric.fetchfabric');
