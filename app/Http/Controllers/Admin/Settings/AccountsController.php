@@ -20,7 +20,7 @@ class AccountsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
+    { 
         $accountsgroups = AccountsGroup::getall();        
         $accounts= Account::orderBy('Ac_Name','asc')->with(['accountsgroups'])->get();
         return view('accounts.list',compact('accounts'));
