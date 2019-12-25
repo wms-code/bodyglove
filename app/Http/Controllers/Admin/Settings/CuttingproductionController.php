@@ -12,9 +12,9 @@ use App\Model\Style;
 use App\Model\Knittedfabdetails;
 use App\Http\Controllers\Controller;
 use DB;
-class CuttingproductionController extends Controller
+class Cuttingproductioncontroller extends Controller
 {
-    
+
     public function __construct()
     {
         $this->middleware('auth:admin');
