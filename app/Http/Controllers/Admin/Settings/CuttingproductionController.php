@@ -14,6 +14,7 @@ use App\Http\Controllers\Controller;
 use DB;
 class CuttingproductionController extends Controller
 {
+    
     public function __construct()
     {
         $this->middleware('auth:admin');

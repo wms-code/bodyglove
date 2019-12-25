@@ -14,7 +14,8 @@ class FabricController extends Controller
     
     public function index()
     {
-              
+         
+        
        // $accounts= Account::orderBy('Ac_Name','asc')->with(['accountsgroups'])->get();
         //return view('accounts.list',compact('accounts')); fabricgroups
 

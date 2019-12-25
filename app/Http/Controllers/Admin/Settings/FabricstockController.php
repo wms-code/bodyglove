@@ -14,6 +14,7 @@ class FabricstockController extends Controller
     public function index()
     {
         
+        
         $accounts = DB::table('knitted_fab_details')  
         ->join('fabrics', 'fabrics.id', '=', 'knitted_fab_details.fabric_id')
         ->join('colours', 'colours.id', '=', 'knitted_fab_details.colour_id')
